@@ -1,0 +1,118 @@
+.userDetailContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navBar{
+    height: 2rem;
+    background-color: lightgray;
+    margin-bottom: 1rem;
+}
+
+.navImage{
+    height: 100%;
+}
+
+.imgDiv{
+    width: 30%;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userImage {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+}
+
+#followBtn {
+    background-color: rgb(71, 192, 240);
+    color: white;
+}
+
+.btns {
+    height: 1.5rem;
+    border: 0px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.detailClass{
+    display: flex;
+    align-items: center;
+}
+
+.detailClass > p {
+    margin-right: 1rem;;
+}
+
+.contentBox{
+    width: 60%;
+}
+
+.firstInnerBox{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 15rem 15rem 15rem;
+    grid-gap: 1rem;
+}
+
+.postImg:hover{
+    filter: grayscale(70%);
+    cursor: pointer;
+}
+
+.name {
+    margin-right: 1.5rem;
+    font-weight: bold;
+}
+
+.parentBtns{
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 7rem 7rem 7rem;
+        grid-gap: 0.5rem;
+    }
+    
+    .postImg{
+        height: 50%;
+        width: 100%;
+    }
+
+    .firstInnerBox{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+
+    .userDetailContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .detailClass > p > span {
+        color: gray;
+    }
+}
